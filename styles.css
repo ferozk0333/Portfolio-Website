@@ -913,9 +913,10 @@ h3 {
 .portfolio-footer {
 	background-color: var(--blue-800); 
 	color: var(--base-100); 
-	padding: 40px 20px;
+	padding: 20px 20px;
 	margin-top: 50px; 
 	text-align: center;
+	font-size: medium;
 	
   }
   
