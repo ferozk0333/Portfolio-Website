@@ -217,11 +217,14 @@ h1 {
 		flex:1;
 		background-color: var(--blue-100);
 		border-radius:30px;
-		padding:50px;
-		
+		padding:30px;
 		display:flex;
 		flex-direction:column;
 		justify-content:center;
+
+		p{
+			font-size: 15px;
+		}
 
 		p + p { 
 			margin-top: 10px; /* Adds gap before the second paragraph */
@@ -323,50 +326,146 @@ h3 {
 	color: var(--base-800);
 }
 
-.skills {
-	.holder-blue {
+/* Container for Skills & Work Experience */
+#skills-workex {
+    padding: 40px;
+}
+
+.skills-workex-container {
+    display: flex; /* Flexbox for side-by-side layout */
+    gap: 20px; /* Spacing between the two sections */
+    @media (max-width: 1024px) {
+        flex-direction: column; /* Stack vertically on smaller screens */
+    }
+}
+
+/* Skills Section */
+.skills-container {
+    flex: 1;
+    background-color: var(--blue-100);
+    border-radius: 15px;
+    padding: 20px;
+
+	h4 {
+		margin-bottom: 10px;
+	}
+    
+}
+
+.skills-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-container ul li {
+    background-color: var(--blue-100);
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    color: var(--blue-800);
+    font-weight: 600;
+    box-shadow: inset 0 0 0 1px var(--blue-400);
+}
+
+/* Work Experience Section */
+.workex-container {
+    flex: 1;
+    background-color: var(--blue-100);
+    border-radius: 15px;
+    padding: 20px;
+    
+}
+
+/* .workex-container .work-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.workex-container .work-image {
+    width: 80px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.workex-container p {
+    margin: 0;
+    font-size: 16px;
+    text-align: justify;
+} */
+
+.workex-container .jobs {
+	display:flex;
+	gap:30px;
+	font-size: medium;
+	@media(max-width:1024px){
+		flex-direction:column;
+	}
+	article {
 		background-color: var(--blue-100);
+		padding:0px;
 		border-radius:30px;
-		padding:30px;
-		display:flex;
-		@media(max-width:1024px){
-			flex-direction:column;
+		flex:1;
+		h3 {
+			margin-top:20px;
+			margin-bottom:10px;
 		}
-		.left-column {
-			flex:1;            /*divides into 2 equal parts of 50% each*/
-			ul {
-				
-				list-style-type: none;
-				display: flex; /* Use flex for better alignment */
-				flex-wrap: wrap; /* Allow wrapping to the next line */
-				gap: 8px; /* Spacing between tags */
-				margin-bottom: 40px;
-				padding: 0;
-			}
-			
-			ul li {
-				display: inline-block;
-				background-color: var(--blue-100); /* Light blue background */
-				padding: 6px 18px; /* Balanced padding */
-				border-radius: 15px; /* Fully rounded corners for a tag look */
-				font-size: 16px; /* Slightly smaller text size */
-				color: var(--blue-800); /* Darker text for readability */
-				font-weight: 600; /* Bold text to make it stand out */
-				box-shadow: inset 0 0 0 1px var(--blue-400); /* Thin outline inside */
-				margin: 0; /* Reset margin for consistent spacing */
-			}
-			
+		div {
+			font-weight:600;
+			margin-bottom:5px;
+			color: var(--base-800);
 		}
-		.right-column {
-			flex:1;     /*divides into 2 equal parts of 50% each*/
-			p {
-				margin-bottom:40px;
-				text-align:justify;
-				
+		p {
+			margin-bottom:10px;
+		}
+		figure {
+			width:100%;
+			padding-top:56.25%;  /* gives 16:9 ratio for images*/
+			overflow:hidden;
+			position:relative;
+			border-radius:15px;
+			img {
+				position:absolute;
+				top:0;
+				left:0;
+				height:100%;
+				object-fit:cover;
+				transition: ease 3s all;
 			}
+			figcaption {
+				position:absolute;
+				bottom:0;
+				left:0;
+				right:0;
+				background-color: rgba(0,0,0,0.5);
+				color: var(--base-100);
+				text-align:center;
+				padding:10px;
+				opacity:0;
+				visibility:hidden;
+				transition: ease 0.3s all;
+			}
+
+			&:hover {
+				figcaption {
+					opacity:1;
+					visibility:visible;
+				}
+				img {
+					transform: scale(1.1);  /*zoom in images transition*/
+				}
+			}
+
 		}
 	}
 }
+
 
 .work-experience {
 	.jobs {
