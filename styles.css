@@ -194,7 +194,7 @@ section {
 }
 
 h1 {
-	font-size:64px;
+	font-size:54px;
 	line-height:1;
 	margin-bottom:10px;
 	small {
@@ -223,7 +223,7 @@ h1 {
 		justify-content:center;
 
 		p{
-			font-size: 15px;
+			font-size: 16px;
 		}
 
 		p + p { 
@@ -267,38 +267,7 @@ h1 {
 	}
 }
 
-/* .logos {
-	background-color: var(--base-100);
-	border-radius:30px;
-	padding:30px 0px;
-	@media (max-width:1440px){
-		border-radius:0px;
-	}
-	.marquee {
-		width:100vw;
-		max-width:100%;
-		height:128px;
-		overflow:hidden;
-		position:relative;
-		.track {
-			position:absolute;
-			white-space:nowrap;
-			will-change:transform;
-			animation: marquee 40s linear infinite;
-			display:flex;
-			gap:10px;
-		}
-	}
-} */
 
-/* @keyframes marquee {
-	0% {
-		transform: translateX(0);
-	}
-	100% {
-		transform: translateX(-50%);
-	}
-} */
 
 h2 {
 	font-size:64px;
@@ -328,7 +297,7 @@ h3 {
 
 /* Container for Skills & Work Experience */
 #skills-workex {
-    padding: 40px;
+    padding: 0px;
 }
 
 .skills-workex-container {
@@ -813,9 +782,9 @@ h3 {
 	.storytelling {
 		display: flex;
 		gap: 30px;
-		
+		font-size: 18px;
 		flex-wrap: wrap; /* Ensures wrapping on smaller screens */
-		justify-content: center; /* Centers the containers horizontally */
+		justify-content: justify; /* Centers the containers horizontally */
 	  }
 	  
 	  .storytelling .slide {
@@ -1119,6 +1088,4 @@ h3 {
   }
   
   
-  
-
   
