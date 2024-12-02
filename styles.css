@@ -1095,5 +1095,32 @@ h3 {
 	color: var(--base-400);
   }
   
-  
+  .academic-research {
+    margin-top: 20px;
+	font-size: 15px;
+	
+	
+
+}
+
+.academic-research h4 {
+    font-size: 20px;
+    color: var(--base-800);
+    margin-bottom: 15px;
+}
+
+.research-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--blue-800);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.research-button:hover {
+    background-color: var(--blue-600);
+}
+
   
