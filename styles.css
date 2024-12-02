@@ -229,9 +229,7 @@ h1 {
 		p + p { 
 			margin-top: 10px; /* Adds gap before the second paragraph */
 		  }
-		  @media (max-width:768px){
-			
-		}
+		  
 		span {
 			
 			@media (max-width:768px){
