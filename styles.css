@@ -254,22 +254,7 @@ h1 {
 				}
 			}
 		}
-		.header-socials{
-			display: flex;
-				justify-content: left;
-				gap: 15px;
-			
-			  img {
-				width: 38px;
-				height: 38px;
-				transition: transform 0.3s ease;
-			  }
-			  
-				a:hover img {
-				transform: scale(1.1); /* Slight zoom on hover */
-			  }
-			
-		}
+		
 	}
 	.hero-yellow {
 		flex:1;
