@@ -512,6 +512,10 @@ h3 {
 
 
 .bento {
+
+	p{
+		font-size: medium;
+	}
 	
 	.bento-grid {
 		display:grid;
