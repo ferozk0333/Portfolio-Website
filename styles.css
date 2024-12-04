@@ -638,6 +638,7 @@ h3 {
 	margin: 50px auto;
 	color: var(--base-800);
 	font-family: "Open Sans", sans-serif;
+	
   }
   
   .project-details h1 {
@@ -701,20 +702,20 @@ h3 {
 	color: var(--base-100);
   }
   .project-details h1 {
-	font-size: 40px; /* Match header font sizes from index page */
+	font-size: 28px; /* Match header font sizes from index page */
 	color: var(--base-800);
 	margin-bottom: 20px;
 	text-align: center;
   }
   
   .project-details h3 {
-	font-size: 30px; /* Consistent subheader sizes */
+	font-size: 20px; /* Consistent subheader sizes */
 	color: var(--blue-800);
 	margin-bottom: 10px;
   }
   
   .project-details p, .project-details ul {
-	font-size: 18px; /* Body text size consistent with index */
+	font-size: 14px; /* Body text size consistent with index */
 	color: var(--base);
 	line-height: 1.6;
   }
@@ -747,8 +748,9 @@ h3 {
   
   .diagram {
 	max-width: 49.8%;
-	margin-top: 10px;
+	margin-top: 1px;
 	border-radius: 8px;
+	
   }
   
   

@@ -31,42 +31,56 @@
 
   <main>
     <section class="project-details container">
-      <h1>Mental Health Analytics with NLP</h1>
+      <h1>FinSight: Financial Research Assistant with LangChain and OpenAI</h1>
       
       <!-- GitHub  -->
       <div class="project-section">
         <h3>GitHub</h3>
-        <p><p>All code is available on my <a href="https://github.com/ferozk0333" target="_blank"><strong>GitHub</strong></a>.</p></p>
+        <p><p>All code is available on my <a href="https://github.com/ferozk0333/FinSight-Financial-Research-Assistant-with-LangChain-and-OpenAI" target="_blank"><strong>GitHub</strong></a>.</p></p>
       </div>
 
       <!-- Problem Statement -->
       <div class="project-section">
         <h3>Problem Statement</h3>
-        <p>Mental health data is often unstructured and difficult to analyze. Understanding sentiment, emotions, and mental health trends from text data is crucial to addressing the growing mental health crisis.</p>
+        <p>Investors and financial analysts face the challenge of sifting through vast amounts of financial information from multiple sources such as news articles, quarterly reports, and industry updates to make informed decisions. This process is time-consuming, error-prone, and inefficient due to repetitive tasks like manual aggregation and data retrieval. Additionally, traditional LLMs have limitations, such as token limits and high costs, when processing large volumes of text.</p>
       </div>
 
       <!-- Proposed Solution -->
       <div class="project-section">
         <h3>Proposed Solution</h3>
-        <p>This project leverages NLP techniques such as sentiment analysis, VADER, and RNNs to extract insights from mental health-related texts. It provides visualizations and actionable insights using Power BI.</p>
+        <p>
+          This app <strong>streamlines financial research</strong> by automating retrieval and analysis. It aggregates data, stores it in a <strong>vector database</strong>, and answers queries by retrieving and summarizing relevant chunks. By leveraging <strong>LLMs</strong> and efficient <strong>chunking</strong>, FinSight minimizes costs and improves accuracy.
+          </p>
+          
+          <p>
+          It uses an <strong>Unstructured URL Loader</strong> to extract content and metadata. Text is split into chunks using a <strong>Recursive Character Text Splitter</strong> for optimal token usage. These chunks are converted to vector embeddings with OpenAI or HuggingFace and stored in <strong>FAISS</strong> for efficient searches.
+          </p>
+          
+          <p>
+          FinSight retrieves <strong>relevant chunks</strong> via semantic search, combines them into a <strong>query prompt</strong>, and processes it with the LLM using <strong>RetrievalQAWithSourcesChain</strong> to generate accurate responses.
+          </p>
+          
+          
+            
       </div>
 
       <!-- Business Domain -->
       <div class="project-section">
         <h3>Business Domain</h3>
-        <p>Healthcare, Mental Health, and Data Analytics.</p>
+        <p>Financial Research, Investment Analysis.</p>
+        <p>The primary focus is on enabling efficient analysis of company metrics (e.g., EBITDA, PE ratios) and assisting in informed decision-making for stock evaluations and portfolio management. </p>
       </div>
 
       <!-- Tech Stack -->
       <div class="project-section">
         <h3>Tech Stack</h3>
         <ul>
-          <li>Python</li>
-          <li>Flask</li>
-          <li>SQL</li>
-          <li>React</li>
-          <li>Azure</li>
+          <li><strong>Frontend</strong>: Streamlit</li>
+          <li><strong>Backend</strong>: Python, LangChain</li>
+          <li><strong>Database</strong>: FAISS (In-memory Vector DB)</li>
+          <li><strong>LLM Integration</strong>: OpenAI APIs</li>
         </ul>
+        
       </div>
 
       
@@ -74,15 +88,16 @@
       <!-- Project Diagrams -->
       <div class="project-section">
         <h3>Project Diagrams</h3>
-        <img src="./imgs/powerbi.JPG" alt="Project Diagram" class="diagram">
-        <img src="./imgs/powerbi.JPG" alt="Project Diagram" class="diagram">
+        <img src="./imgs/ERA_PD - 1.JPG" alt="Project Diagram" class="diagram">
+        <img src="./imgs/ERA_PD - 2.JPG" alt="Project Diagram" class="diagram">
+        <img src="./imgs/ERA_PD - 3.JPG" alt="Project Diagram" class="diagram">
       </div>
 
       <!-- Demo Video -->
       <div class="project-section">
         <h3>Demo Video</h3>
         <video controls>
-          <source src="./imgs/painting-video2.mp4" type="video/mp4">
+          <source src="./assets/ERA-Demo Video.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -90,13 +105,13 @@
       <!-- Learn More Section -->
  <div class="project-section">
     <h3>Learnings</h3>
-    <p>This project made me realize the value of emphathy when addressing social issues.</p>
+    <p>I deepened my understanding of semantic search using vector databases and the efficient integration of LLMs for cost-optimized solutions.</p>
   </div>
 
       <!-- Button Section -->
       <div class="button-section">
         <a href="index.html#projects" class="button black">Back to Projects</a>
-        <a href="https://github.com/ferozk0333" class="button view-code" target="_blank">View Code</a>
+        <a href="https://github.com/ferozk0333/FinSight-Financial-Research-Assistant-with-LangChain-and-OpenAI" class="button view-code" target="_blank">View Code</a>
       </div>
     </section>
 
