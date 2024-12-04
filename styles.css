@@ -702,7 +702,7 @@ h3 {
 	color: var(--base-100);
   }
   .project-details h1 {
-	font-size: 28px; /* Match header font sizes from index page */
+	font-size: 26px; 
 	color: var(--base-800);
 	margin-bottom: 20px;
 	text-align: center;
