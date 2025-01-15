@@ -747,7 +747,7 @@ h3 {
   }
   
   .diagram {
-	max-width: 49.8%;
+	max-width: 60%;
 	margin-top: 1px;
 	border-radius: 8px;
 	
@@ -1134,3 +1134,101 @@ h3 {
 }
 
   
+/* Adding new contianer for projets */
+
+.project-container {
+    display: flex;
+    gap: 30px; /* Space between project cards */
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+    justify-content: space-between; 
+    font-size: 18px;
+	
+}
+
+.project-card {
+    background-color: var(--blue-200); /* Same background color as storytelling --blue100 */
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1 1 calc(50% - 30px); /* Two columns with gap */
+    max-width: calc(50% - 10px); /* Limit width to half of the container */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+	
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+.project-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--blue-800);
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: var(--base-400);
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.project-card .project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--blue-800);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-card .project-link:hover {
+    background-color: var(--blue-400);
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .project-card {
+        flex: 1 1 100%; /* Full width for smaller screens */
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-container {
+        gap: 20px; /* Reduce gap for smaller screens */
+    }
+
+    .project-card {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .project-card h3 {
+        font-size: 18px;
+    }
+
+    .project-card p {
+        font-size: 14px;
+    }
+
+    .project-card .project-link {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
