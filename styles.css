@@ -346,33 +346,21 @@ h3 {
 
 /* Work Experience Section */
 .workex-container {
-    flex: 1;
-    background-color: var(--blue-100);
+    
+
+	background-color: var(--blue-100); /* Same background color as storytelling --blue100 */
+    padding: 30px;
     border-radius: 15px;
-    padding: 20px;
+    flex: 1 1 calc(50% - 30px); /* Two columns with gap */
+    max-width: calc(50% - 10px); /* Limit width to half of the container */
+    text-align: left;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 	
     
 }
 
-/* .workex-container .work-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    margin-bottom: 20px;
-}
 
-.workex-container .work-image {
-    width: 80px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.workex-container p {
-    margin: 0;
-    font-size: 16px;
-    text-align: justify;
-} */
 
 .workex-container .jobs {
 	display:flex;
@@ -413,7 +401,7 @@ h3 {
 				left:0;
 				height:100%;
 				object-fit:cover;
-				transition: ease 3s all;
+				transition: transform 0.3s ease;
 			}
 			figcaption {
 				position:absolute;
@@ -426,7 +414,7 @@ h3 {
 				padding:10px;
 				opacity:0;
 				visibility:hidden;
-				transition: ease 0.3s all;
+				transition: ease 0.4s all;
 			}
 
 			&:hover {
@@ -435,7 +423,7 @@ h3 {
 					visibility:visible;
 				}
 				img {
-					transform: scale(1.1);  /*zoom in images transition*/
+					transform: scale(1);  /*zoom in images transition*/
 				}
 			}
 
