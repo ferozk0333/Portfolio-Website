@@ -351,11 +351,13 @@ h3 {
 	background-color: var(--blue-100); /* Same background color as storytelling --blue100 */
     padding: 30px;
     border-radius: 15px;
-    flex: 1 1 calc(50% - 30px); /* Two columns with gap */
-    max-width: calc(50% - 10px); /* Limit width to half of the container */
+    flex: 1 1 calc(0% - 30px); /* Two columns with gap */
+    /*max-width: calc(50% - 10px); /* Limit width to half of the container */
+	width: 100%;
     text-align: left;
     
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+	
 	
     
 }
@@ -366,15 +368,19 @@ h3 {
 	display:flex;
 	gap:30px;
 	font-size: medium;
-	@media(max-width:1024px){
-		flex-direction:column;
-	}
+	flex-wrap: wrap;
+	
+    @media (max-width: 1024px) {
+        flex-direction: column; /* Stacks vertically on smaller screens */
+		
+    }
 	article {
 		background-color: var(--blue-100);
 		padding:0px;
 		border-radius:30px;
 		flex:1;
 		font-size: medium;
+		width: 100%;
 		justify-content: justify;;
 		h3 {
 			margin-top:20px;
@@ -400,6 +406,7 @@ h3 {
 				top:0;
 				left:0;
 				height:100%;
+				width: 100%;
 				object-fit:cover;
 				transition: transform 0.3s ease;
 			}
@@ -432,75 +439,7 @@ h3 {
 }
 
 
-.work-experience {
-	.jobs {
-		display:flex;
-		gap:30px;
-		
-		@media(max-width:1024px){
-			flex-direction:column;
-		}
-		article {
-			background-color: var(--blue-100);
-			padding:30px;
-			border-radius:30px;
-			flex:1;
-			
-			h3 {
-				margin-top:20px;
-				margin-bottom:10px;
-				
-			}
-			div {
-				font-weight:600;
-				margin-bottom:5px;
-				color: var(--base-800);
-			}
-			p {
-				margin-bottom:10px;
-			}
-			figure {
-				width:100%;
-				padding-top:56.25%;  /* gives 16:9 ratio for images*/
-				overflow:hidden;
-				position:relative;
-				border-radius:15px;
-				img {
-					position:absolute;
-					top:0;
-					left:0;
-					height:100%;
-					object-fit:cover;
-					transition: ease 3s all;
-				}
-				figcaption {
-					position:absolute;
-					bottom:0;
-					left:0;
-					right:0;
-					background-color: rgba(0,0,0,0.5);
-					color: var(--base-100);
-					text-align:center;
-					padding:10px;
-					opacity:0;
-					visibility:hidden;
-					transition: ease 0.3s all;
-				}
 
-				&:hover {
-					figcaption {
-						opacity:1;
-						visibility:visible;
-					}
-					img {
-						transform: scale(1.1);  /*zoom in images transition*/
-					}
-				}
-
-			}
-		}
-	}
-}
 
 
 .bento {
