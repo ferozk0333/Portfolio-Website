@@ -762,7 +762,7 @@ h3 {
 	  
 	  .storytelling .slide p {
 		font-size: 16px;
-		color: var(--base-400);
+		color: var(--base);
 		margin-bottom: 10px;
 		text-align: justify;
 	  }
@@ -828,7 +828,7 @@ h3 {
   .artwork-video article p {
 	font-size: 16px;
 	line-height: 1.6;
-	color: var(--base-400);
+	color: var(--base);
 	margin-top: 10px;
 	text-align: justify;
   }
